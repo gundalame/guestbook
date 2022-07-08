@@ -32,7 +32,7 @@ export default function View() {
                 <div className='row'>
                     {
                         guestbook.map((item, index) => {
-                            return <div class="col-6">
+                            return <div className="col-6">
                                 <div className="card mb-3">
                                     <div className="card-body">
                                         <h5 className="card-title">{item.name}</h5>
