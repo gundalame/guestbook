@@ -36,28 +36,28 @@ export default function Home() {
       <Header />
       <div className="guestbook-form">
         {showMsg ?
-          <div class="alert alert-success" onClick={ ()=> setShowMsg(false)  }>
+          <div className="alert alert-success" onClick={ ()=> setShowMsg(false)  }>
             Terima kasih mengisi buku tamu kami
           </div> : ""
         }
         <form onSubmit={guestbookSubmit}>
-          <div class="mb-3">
-            <label class="form-label">Nama</label>
-            <input type="text" name="name" required class="form-control" />
+          <div className="mb-3">
+            <label className="form-label">Nama</label>
+            <input type="text" name="name" required className="form-control" />
           </div>
-          <div class="mb-3">
-            <label class="form-label">No HP</label>
-            <input type="text" name='phone' required class="form-control" />
+          <div className="mb-3">
+            <label className="form-label">No HP</label>
+            <input type="text" name='phone' required className="form-control" />
           </div>
-          <div class="mb-3">
-            <label class="form-label">Email</label>
-            <input type="email" name='email' required class="form-control" />
+          <div className="mb-3">
+            <label className="form-label">Email</label>
+            <input type="email" name='email' required className="form-control" />
           </div>
-          <div class="mb-3">
-            <label class="form-label">Pesan</label>
-            <textarea class="form-control" required name="message" />
+          <div className="mb-3">
+            <label className="form-label">Pesan</label>
+            <textarea className="form-control" required name="message" />
           </div>
-          <button type="submit" class="btn btn-primary">Kirim</button>
+          <button type="submit" className="btn btn-primary">Kirim</button>
         </form>
       </div>
       <Footer />
